@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Prata&display=swap');
+.material-symbols-outlined {
+    font-variation-settings:
+    'FILL' 0,
+    'wght' 400,
+    'GRAD' 0,
+    'opsz' 24
+}
+
+*,
+*:after,
+*:before {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    box-sizing: border-box;
+    padding: 0;
+
+    background: url('./assets/main_background.svg');
+    background-size: 100px;
+    background-repeat: repeat;
+
+    font-family: 'Prata', serif;
+    height: 100vh;
+}
+
+/* HEADER */
+header {
+    background: url(./assets/header_background_decal.svg);
+    background-size: cover;
+    background-position: center;
+
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Header navigation */
+.header_nav {
+    margin-top: 10px;
+}
+
+/* Header link */
+.header_nav a {
+    padding: 4px 12px;
+
+    color: white;
+    background: #ee0202;
+    border-radius: 5px;
+
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+
+    margin-right: 10px;
+    margin-top: 10px;
+
+    text-decoration: none;
+    transition: all .2s;
+}
+.header_nav a:hover {
+    transform: scale(1.05);
+}
+
+/* Header link selected */
+.header_nav a.selected {
+    outline: solid 1.6px #d80000;
+}
+
+/* Header link img */
+.header_nav a img {
+    width: 25px;
+}
+
+main {
+    padding: 2em;
+}
+
+button {
+    padding: 8px 12px;
+
+    color: white;
+    background: #ff0000;
+    border: none;
+    border-radius: 10px;
+
+    font-size: 16px;
+    cursor: pointer;
+}
+
+footer {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1em 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
